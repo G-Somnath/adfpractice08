@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "PL_Copy_CSV",
 	"properties": {
 		"activities": [
 			{
@@ -34,7 +34,7 @@
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
 							"quoteAllText": true,
-							"fileExtension": ".txt"
+							"fileExtension": ".csv"
 						}
 					},
 					"enableStaging": false,
