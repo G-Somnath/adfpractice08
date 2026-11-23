@@ -1,0 +1,16 @@
+{
+	"name": "QctPracticeSom",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true,
+			"isExplicitlySet": false
+		}
+	},
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9b18383a-dbff-4430-9aab-9b772f32bccc",
+		"tenantId": "da121781-72b5-4895-8425-f188eb1a6bb4"
+	}
+}
