@@ -1,0 +1,27 @@
+{
+	"name": "DS_source_CSV_file",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedService_ADLS",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ADLS"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "employe-salary-region-dummy.csv",
+				"folderPath": "rawdatasets",
+				"fileSystem": "mystorage"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
