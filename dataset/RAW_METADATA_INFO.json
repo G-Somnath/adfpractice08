@@ -1,0 +1,23 @@
+{
+	"name": "RAW_METADATA_INFO",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedService_ADLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "rawdatasets",
+				"fileSystem": "mystorage"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

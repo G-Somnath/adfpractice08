@@ -1,0 +1,35 @@
+{
+	"name": "DS_SOURCE_MULTI_CSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedService_ADLS",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"SRC_FILE_NAME": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "ADLS"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().SRC_FILE_NAME",
+					"type": "Expression"
+				},
+				"folderPath": "rawdatasets",
+				"fileSystem": "mystorage"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
