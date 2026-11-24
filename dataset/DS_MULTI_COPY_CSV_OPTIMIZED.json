@@ -1,0 +1,38 @@
+{
+	"name": "DS_MULTI_COPY_CSV_OPTIMIZED",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedService_ADLS",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"DIR_NAME": {
+				"type": "string"
+			},
+			"FILE_NAME": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().FILE_NAME",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().DIR_NAME",
+					"type": "Expression"
+				},
+				"fileSystem": "mystorage"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
