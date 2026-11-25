@@ -102,6 +102,7 @@
 									"referenceName": "DS_MULTI_COPY_CSV_OPTIMIZED",
 									"type": "DatasetReference",
 									"parameters": {
+										"DIR_NAME": "rawdatasets",
 										"FILE_NAME": {
 											"value": "@item().name",
 											"type": "Expression"
