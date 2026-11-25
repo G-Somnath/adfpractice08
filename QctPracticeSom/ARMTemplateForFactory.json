@@ -713,8 +713,6 @@
 					{
 						"name": "ForEach1",
 						"type": "ForEach",
-						"state": "Inactive",
-						"onInactiveMarkAs": "Succeeded",
 						"dependsOn": [
 							{
 								"activity": "getmetadata",
@@ -794,7 +792,7 @@
 											"referenceName": "copy_multi_CSV",
 											"type": "DatasetReference",
 											"parameters": {
-												"Folder_Name": "Practise_Data",
+												"Folder_Name": "OptimizedDataSets_Deleted",
 												"File_Name": {
 													"value": "@item().name",
 													"type": "Expression"
@@ -1147,7 +1145,7 @@
 							"value": "@dataset().Folder_Name",
 							"type": "Expression"
 						},
-						"fileSystem": "rawdatasets"
+						"fileSystem": "mystorage"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
